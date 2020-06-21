@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.RowConstraints?>
+
+<Pane id="mainView" fx:id="mainViewPane" focusTraversable="true" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="735.0" prefWidth="1196.0" styleClass="mainViewPane" stylesheets="@../css/adminPanel.css" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.possystem.app.auth.AdminPanelController">
+   <children>
+      <TabPane layoutX="19.0" layoutY="106.0" prefHeight="615.0" prefWidth="1146.0" tabClosingPolicy="UNAVAILABLE">
+        <tabs>
+          <Tab styleClass="userDetail" text="User Details">
+            <content>
+              <AnchorPane fx:id="DetailPane" minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <GridPane layoutX="45.0" layoutY="45.0" prefHeight="328.0" prefWidth="1045.0" AnchorPane.bottomAnchor="201.0" AnchorPane.leftAnchor="45.0" AnchorPane.rightAnchor="61.0" AnchorPane.topAnchor="48.0">
+                          <columnConstraints>
+                            <ColumnConstraints fx:id="gridPane" hgrow="SOMETIMES" maxWidth="304.0" minWidth="10.0" prefWidth="119.0" />
+                            <ColumnConstraints hgrow="SOMETIMES" maxWidth="830.0" minWidth="10.0" prefWidth="382.0" />
+                              <ColumnConstraints hgrow="SOMETIMES" maxWidth="830.0" minWidth="10.0" prefWidth="109.0" />
+                              <ColumnConstraints hgrow="SOMETIMES" maxWidth="830.0" minWidth="10.0" prefWidth="146.0" />
+                              <ColumnConstraints hgrow="SOMETIMES" maxWidth="830.0" minWidth="10.0" prefWidth="340.0" />
+                          </columnConstraints>
+                          <rowConstraints>
+                            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                              <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                              <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                              <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                              <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                              <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                          </rowConstraints>
+                           <children>
+                              <Label prefHeight="46.0" prefWidth="92.0" stylesheets="@../css/adminPanel.css" text="Password" GridPane.rowIndex="1" />
+                              <PasswordField fx:id="passwdfld" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                              <TextField fx:id="userField" GridPane.columnIndex="1" />
+                              <Label text="Email" GridPane.rowIndex="2" />
+                              <Label text="Mobile No" GridPane.columnIndex="3" />
+                              <TextField fx:id="email" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+                              <Label text="User Name" />
+                              <TextField fx:id="mobileNo" GridPane.columnIndex="4" />
+                              <Label text="Birth Day" GridPane.columnIndex="3" GridPane.rowIndex="1" />
+                              <DatePicker prefHeight="26.0" prefWidth="330.0" GridPane.columnIndex="4" GridPane.rowIndex="1" />
+                              <Label text="NIC No" GridPane.columnIndex="3" GridPane.rowIndex="2" />
+                              <TextField GridPane.columnIndex="4" GridPane.rowIndex="2" />
+                           </children>
+                        </GridPane>
+                        <Button fx:id="addUserBtn" blendMode="SRC_ATOP" contentDisplay="GRAPHIC_ONLY" graphicTextGap="10.0" layoutX="54.0" layoutY="392.0" mnemonicParsing="false" pickOnBounds="false" prefHeight="145.0" prefWidth="139.0" styleClass="addUser" stylesheets="@../css/mainView.css" text="Add User" underline="true">
+                           <cursor>
+                              <Cursor fx:constant="DEFAULT" />
+                           </cursor>
+                        </Button>
+                        <Label alignment="BASELINE_CENTER" layoutX="43.0" layoutY="537.0" prefHeight="22.0" prefWidth="148.0" text="Add User" textAlignment="CENTER" />
+                     </children></AnchorPane>
+            </content>
+          </Tab>
+          <Tab text="Charts">
+            <content>
+              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" />
+            </content>
+          </Tab>
+        </tabs>
+      </TabPane>
+      <Label layoutX="324.0" layoutY="26.0" prefHeight="46.0" prefWidth="588.0" styleClass="Header" stylesheets="@../css/mainView.css" text="Welcome to ABC Shopping Center" />
+      <ImageView fitHeight="93.0" fitWidth="164.0" layoutX="208.0" layoutY="3.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/logo.png" />
+         </image>
+      </ImageView>
+   </children>
+</Pane>

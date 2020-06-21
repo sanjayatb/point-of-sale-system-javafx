@@ -1,0 +1,28 @@
+.root {
+    -fx-spacing: 30;
+    -fx-background-color: greenyellow;
+}
+
+.mainViewPane
+{
+    -fx-background-image: url("../images/login.jpg");
+    -fx-background-size: 1200px;
+}
+
+.addUser
+{
+    -fx-background-image: url("../images/addUser.png");
+    -fx-border-color: transparent;
+    -fx-background-color: transparent;
+    -fx-text-alignment: center;
+    -fx-background-size: 150px;
+    -fx-animated: true;
+}
+
+.Header
+{
+    -fx-animated: true;
+    -fx-font-weight: bold;
+    -fx-text-fill: #1D3F53;
+    -fx-font-size: 35px;
+}

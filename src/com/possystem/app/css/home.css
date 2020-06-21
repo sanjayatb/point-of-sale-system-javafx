@@ -1,0 +1,20 @@
+.root
+{
+    -fx-background-color: aliceblue;
+}
+
+.checkOut:hover
+{
+    -fx-background-color: green;
+}
+
+.checkIn:hover
+{
+    -fx-background-color: deepskyblue;
+}
+
+.reports:hover
+{
+    -fx-background-color: indianred;
+    -fx-text-alignment: center;
+}

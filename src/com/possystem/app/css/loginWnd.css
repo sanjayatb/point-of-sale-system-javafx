@@ -1,0 +1,33 @@
+.root {
+    -fx-spacing: 30;
+    -fx-background-color: greenyellow;
+}
+
+.LoginWnd
+{
+    -fx-background-image: url("../images/login.jpg");
+}
+
+.UserNameField
+{
+    -fx-text-fill: #56747E;
+    -fx-font-weight: bolder;
+}
+
+.password-field
+{
+    -fx-text-fill: #56747E;
+    -fx-font-weight: bolder;
+}
+
+.button {
+    -fx-text-fill: #56747E;
+    -fx-font-weight: bolder;
+    -fx-background-color: #1D3F53;
+    -fx-border-color: #56747E;
+}
+
+.LoginDialog
+{
+    -fx-background-image: url("../images/login.jpg");
+}
