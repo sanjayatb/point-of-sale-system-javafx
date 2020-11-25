@@ -3,3 +3,4 @@ Java and JavaFx point of sales system framework. User can create their own UI ba
 
 ![Login](https://github.com/sanjayatb/point-of-sale-system-javafx/blob/master/ui/Login.JPG)
 
+![Main](https://github.com/sanjayatb/point-of-sale-system-javafx/blob/master/ui/MainAdminView.JPG)
